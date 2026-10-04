@@ -1,0 +1,92 @@
+{
+  "executedAt": "2026-10-04T03:46:34.701Z",
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "id": "TC-01",
+      "name": "health",
+      "passed": true,
+      "detail": "{\"status\":\"ok\",\"service\":\"orders-api\",\"version\":\"1.0.0\"}"
+    },
+    {
+      "id": "TC-02",
+      "name": "login",
+      "passed": true,
+      "detail": "{\"token\":\"token-alice\",\"user\":{\"id\":\"usr-alice\",\"username\":\"alice\",\"role\":\"customer\"}}"
+    },
+    {
+      "id": "TC-03",
+      "name": "paginación",
+      "passed": true,
+      "detail": "{\"page\":1,\"pageSize\":1,\"total\":1,\"totalPages\":1}"
+    },
+    {
+      "id": "TC-04",
+      "name": "crear",
+      "passed": true,
+      "detail": "{\"id\":\"ord-2dad379d-787a-4d72-b7c9-e0b1f98319f4\",\"ownerId\":\"usr-alice\",\"product\":\"Audífonos S11\",\"quantity\":2,\"status\":\"pending\",\"createdAt\":\"2026-10-04T03:46:34.675Z\",\"updatedAt\":\"2026-10-04T03:46:34.675Z\",\"owner\":\"me\"}"
+    },
+    {
+      "id": "TC-05",
+      "name": "consultar",
+      "passed": true,
+      "detail": "{\"id\":\"ord-2dad379d-787a-4d72-b7c9-e0b1f98319f4\",\"ownerId\":\"usr-alice\",\"product\":\"Audífonos S11\",\"quantity\":2,\"status\":\"pending\",\"createdAt\":\"2026-10-04T03:46:34.675Z\",\"updatedAt\":\"2026-10-04T03:46:34.675Z\",\"owner\":\"me\"}"
+    },
+    {
+      "id": "TC-06",
+      "name": "cambiar estado",
+      "passed": true,
+      "detail": "{\"id\":\"ord-2dad379d-787a-4d72-b7c9-e0b1f98319f4\",\"ownerId\":\"usr-alice\",\"product\":\"Audífonos S11\",\"quantity\":2,\"status\":\"confirmed\",\"createdAt\":\"2026-10-04T03:46:34.675Z\",\"updatedAt\":\"2026-10-04T03:46:34.675Z\",\"owner\":\"me\"}"
+    },
+    {
+      "id": "TC-07",
+      "name": "idempotencia",
+      "passed": true,
+      "detail": "{\"id\":\"ord-2dad379d-787a-4d72-b7c9-e0b1f98319f4\",\"ownerId\":\"usr-alice\",\"product\":\"Audífonos S11\",\"quantity\":2,\"status\":\"confirmed\",\"createdAt\":\"2026-10-04T03:46:34.675Z\",\"updatedAt\":\"2026-10-04T03:46:34.675Z\",\"owner\":\"me\"}"
+    },
+    {
+      "id": "TC-08",
+      "name": "obligatorio",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"VALIDATION_ERROR\",\"message\":\"Datos inválidos\",\"details\":[\"product es obligatorio y debe ser texto\"]}}"
+    },
+    {
+      "id": "TC-09",
+      "name": "tipo/rango",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"VALIDATION_ERROR\",\"message\":\"Datos inválidos\",\"details\":[\"quantity debe ser entero entre 1 y 100\"]}}"
+    },
+    {
+      "id": "TC-10",
+      "name": "sin credenciales",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"UNAUTHORIZED\",\"message\":\"Se requiere un token Bearer válido\",\"details\":[]}}"
+    },
+    {
+      "id": "TC-11",
+      "name": "token inválido",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"UNAUTHORIZED\",\"message\":\"Se requiere un token Bearer válido\",\"details\":[]}}"
+    },
+    {
+      "id": "TC-12",
+      "name": "recurso ajeno",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"FORBIDDEN\",\"message\":\"No puede consultar un pedido ajeno\",\"details\":[]}}"
+    },
+    {
+      "id": "TC-13",
+      "name": "inexistente",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"NOT_FOUND\",\"message\":\"Pedido no encontrado\",\"details\":[]}}"
+    },
+    {
+      "id": "TC-14",
+      "name": "paginación inválida",
+      "passed": true,
+      "detail": "{\"error\":{\"code\":\"INVALID_PAGINATION\",\"message\":\"page y pageSize deben ser enteros\",\"details\":[]}}"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 node_modules/
 reports/*.json
+!reports/last-run.json
+!reports/controlled-failure.json
 reports/*.html
 .env
 *.log

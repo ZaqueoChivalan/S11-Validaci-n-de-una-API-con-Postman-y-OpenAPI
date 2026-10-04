@@ -1,0 +1,17 @@
+{
+  "title": "Incompatibilidad controlada TC-SCHEMA-01",
+  "contractRule": "Health.status debe ser exactamente ok (OpenAPI const: ok)",
+  "brokenResponse": {
+    "status": "degraded",
+    "service": "orders-api",
+    "version": "1.0.0"
+  },
+  "brokenTest": "FAIL esperado: la aserción de contrato detectó status=degraded",
+  "correctedResponse": {
+    "status": "ok",
+    "service": "orders-api",
+    "version": "1.0.0"
+  },
+  "correctedTest": "PASS: status=ok",
+  "verifiedAt": "2026-10-04T03:46:35.536Z"
+}
