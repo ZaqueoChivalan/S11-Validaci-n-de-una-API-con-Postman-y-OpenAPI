@@ -4,8 +4,10 @@ API local de pedidos creada para la actividad de la Semana 11. Implementa listad
 
 ## Entrega
 
+- Estudiante: Zaqueo Osvaldo Chivalan Osorio.
+- Carné: 2890-22-8915.
 - Repositorio: https://github.com/ZaqueoChivalan/S11-Validaci-n-de-una-API-con-Postman-y-OpenAPI
-- Video (máximo 3 minutos): `PENDIENTE: pegar aquí el enlace del video`.
+- Video (máximo 3 minutos): https://drive.google.com/file/d/1SyHNf2Xel4w_xfkHxr_BQ4THuuz5tTxc/view?usp=sharing
 - PDF breve: [`docs/entrega-s11.pdf`](docs/entrega-s11.pdf).
 
 ## Requisitos y versiones
