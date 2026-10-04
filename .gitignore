@@ -5,3 +5,4 @@ reports/*.json
 reports/*.html
 .env
 *.log
+tmp/
