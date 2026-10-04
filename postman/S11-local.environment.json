@@ -1,0 +1,14 @@
+{
+  "id": "s11-local-environment",
+  "name": "S11 - Local (sin secretos)",
+  "values": [
+    { "key": "baseUrl", "value": "http://localhost:3000", "enabled": true },
+    { "key": "aliceToken", "value": "", "enabled": true },
+    { "key": "bobToken", "value": "", "enabled": true },
+    { "key": "orderId", "value": "", "enabled": true },
+    { "key": "foreignOrderId", "value": "ord-seed-002", "enabled": true }
+  ],
+  "_postman_variable_scope": "environment",
+  "_exported_using": "Postman",
+  "_exported_at": "2026-10-03T00:00:00.000Z"
+}

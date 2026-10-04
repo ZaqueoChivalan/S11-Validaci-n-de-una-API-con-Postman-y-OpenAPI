@@ -1,0 +1,16 @@
+{
+  "name": "s11-api-postman-openapi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de pedidos para validar con Postman y OpenAPI 3.1",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test:api": "node scripts/run-api-tests.js",
+    "test:failure": "node scripts/run-controlled-failure.js",
+    "test:all": "node scripts/run-api-tests.js && node scripts/run-controlled-failure.js",
+    "postman": "newman run postman/S11-pedidos.collection.json -e postman/S11-local.environment.json"
+  },
+  "devDependencies": { "newman": "^6.2.1" }
+}
