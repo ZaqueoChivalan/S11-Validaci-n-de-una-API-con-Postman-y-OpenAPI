@@ -4,7 +4,7 @@ API local de pedidos creada para la actividad de la Semana 11. Implementa listad
 
 ## Entrega
 
-- Repositorio: `PENDIENTE: pegar aquí el enlace final de GitHub`.
+- Repositorio: https://github.com/ZaqueoChivalan/S11-Validaci-n-de-una-API-con-Postman-y-OpenAPI
 - Video (máximo 3 minutos): `PENDIENTE: pegar aquí el enlace del video`.
 - PDF breve: [`docs/entrega-s11.pdf`](docs/entrega-s11.pdf).
 
